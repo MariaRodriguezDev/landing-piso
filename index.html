@@ -1,0 +1,2360 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- ===== META Y SEO ===== -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Zapillo Habitaciones · Piso para Estudiantes en El Zapillo, Almería
+    </title>
+    <meta
+      name="description"
+      content="Habitaciones en piso compartido en El Zapillo, Almería. A 10 min de la UAL en bus. Desde 300€/mes. Totalmente equipado, ambiente tranquilo. Trato directo, sin comisiones."
+    />
+    <meta
+      property="og:title"
+      content="Zapillo Habitaciones · Piso para Estudiantes en Almería"
+    />
+    <meta
+      property="og:description"
+      content="Tu habitación en El Zapillo, Almería. Desde 300€/mes. Cerca de la UAL, ambiente internacional, trato directo."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="fotos/hab_boris.jpg" />
+
+    <!-- Fuentes: Clash Display (potente) + Plus Jakarta Sans (legible) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Favicon SVG — ola + Z en azul navy -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23102d60'/%3E%3Ctext x='16' y='22' font-family='system-ui,sans-serif' font-weight='900' font-size='18' fill='white' text-anchor='middle'%3EZ%3C/text%3E%3Cpath d='M4 26 Q8 23 12 26 Q16 29 20 26 Q24 23 28 26' stroke='%232563eb' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E"
+    />
+
+    <!-- Lucide icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- ===== INICIO CURSOR PERSONALIZADO ===== -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+    <!-- ===== FIN CURSOR ===== -->
+
+    <!-- ===== INICIO HEADER ===== -->
+    <!-- Edita: NOMBRE MARCA en .brand-name | número WhatsApp | enlaces menú -->
+    <header class="site-header" id="top">
+      <div class="header-inner">
+        <!-- ===== LOGO — cambia el SVG o sustituye por <img src="logo.svg"> ===== -->
+        <a
+          href="#top"
+          class="brand-logo"
+          aria-label="Zapillo Habitaciones — inicio"
+        >
+          <div class="brand-mark">
+            <!-- Logo: Z con ola -->
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 22 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <text
+                x="11"
+                y="15"
+                font-family="system-ui,sans-serif"
+                font-weight="900"
+                font-size="14"
+                fill="white"
+                text-anchor="middle"
+              >
+                Z
+              </text>
+              <path
+                d="M2 19 Q5.5 16.5 9 19 Q12.5 21.5 16 19 Q19.5 16.5 20 19"
+                stroke="rgba(255,255,255,0.7)"
+                stroke-width="1.5"
+                fill="none"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          <div class="brand-text">
+            <!-- Cambia el nombre de marca aquí -->
+            <span class="brand-name">Zapillo Habitaciones</span>
+            <span class="brand-sub">El Zapillo · Almería</span>
+          </div>
+        </a>
+
+        <nav class="main-nav" aria-label="Navegación">
+          <a href="#habitaciones" class="nav-link">Habitaciones</a>
+          <a href="#el-piso" class="nav-link">El piso</a>
+          <a href="#gastos" class="nav-link">Gastos</a>
+          <a href="#proceso" class="nav-link">Reservar</a>
+          <a href="#faq" class="nav-link">FAQ</a>
+        </nav>
+
+        <div class="lang-switcher" aria-label="Idioma / Language">
+          <button class="lang-btn lang-active" data-lang="es" title="Español">
+            ES
+          </button>
+          <button class="lang-btn" data-lang="en" title="English">EN</button>
+          <button class="lang-btn" data-lang="fr" title="Français">FR</button>
+          <button class="lang-btn" data-lang="de" title="Deutsch">DE</button>
+          <button class="lang-btn" data-lang="it" title="Italiano">IT</button>
+        </div>
+
+        <div class="header-actions">
+          <!-- Cambia el número de WhatsApp -->
+          <a
+            href="https://wa.me/34600550178"
+            class="btn-whatsapp"
+            target="_blank"
+            rel="noopener"
+            aria-label="WhatsApp"
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+              />
+            </svg>
+            WhatsApp
+          </a>
+          <a href="#formulario" class="btn-cta-header">Solicitar hab.</a>
+        </div>
+
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+      <nav class="mobile-menu" id="mobileMenu" aria-hidden="true">
+        <a href="#habitaciones" class="mob-link">Habitaciones</a>
+        <a href="#el-piso" class="mob-link">El piso</a>
+        <a href="#gastos" class="mob-link">Gastos</a>
+        <a href="#proceso" class="mob-link">Cómo reservar</a>
+        <a href="#faq" class="mob-link">Preguntas frecuentes</a>
+        <a href="#formulario" class="mob-link mob-cta"
+          >Solicitar habitación →</a
+        >
+      </nav>
+    </header>
+    <!-- ===== FIN HEADER ===== -->
+
+    <!-- ===== INICIO HERO ===== -->
+    <!--
+  HERO — layout dividido: texto izquierda, foto derecha
+  Edita:
+  - Titular: .hero-title
+  - Subtítulo: .hero-sub
+  - Pill de urgencia: .hero-pill (plazas disponibles)
+  - Foto: hero-img src
+  - Precios: .price-chip
+  - Botones: .hero-actions
+  - Tags rápidos: .hero-tags
+-->
+    <section class="hero" id="hero">
+      <div class="hero-inner">
+        <!-- ── COLUMNA IZQUIERDA: texto ── -->
+        <div class="hero-text-col">
+          <!-- Pill urgencia — edita el texto de disponibilidad -->
+          <div class="hero-pill" data-animate>
+            <span class="live-dot"></span>
+            Solo quedan <strong>2 habitaciones</strong> para septiembre
+          </div>
+
+          <!-- Titular principal — edita las 3 líneas -->
+          <h1 class="hero-title" data-animate>
+            Vive, estudia<br />
+            y disfruta<br />
+            <span class="hero-title-highlight">en El Zapillo</span>
+          </h1>
+
+          <!-- Subtítulo -->
+          <p class="hero-sub" data-animate>
+            Habitaciones en piso compartido para estudiantes que buscan
+            comodidad, buen ambiente y la mejor ubicación en Almería.
+          </p>
+
+          <!-- Botones CTA -->
+          <div class="hero-actions" data-animate>
+            <a href="#habitaciones" class="btn-hero-primary"
+              >Ver habitaciones disponibles</a
+            >
+            <a href="#el-piso" class="btn-hero-ghost">Conocer el piso →</a>
+          </div>
+
+          <!-- Ola decorativa (como en la referencia) -->
+          <div class="hero-wave-deco" aria-hidden="true">
+            <svg
+              viewBox="0 0 200 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              width="160"
+            >
+              <path
+                d="M0 15 Q25 5 50 15 Q75 25 100 15 Q125 5 150 15 Q175 25 200 15"
+                stroke="var(--accent)"
+                stroke-width="2.5"
+                fill="none"
+                stroke-linecap="round"
+              />
+              <path
+                d="M0 22 Q25 12 50 22 Q75 32 100 22 Q125 12 150 22 Q175 32 200 22"
+                stroke="var(--accent)"
+                stroke-width="1.5"
+                fill="none"
+                stroke-linecap="round"
+                opacity=".4"
+              />
+            </svg>
+          </div>
+
+          <!-- Precios rápidos -->
+          <div class="hero-prices" data-animate>
+            <div class="hero-price-chip">
+              <span class="hero-price-amount">300€</span>
+              <span class="hero-price-label">Cama 90 · mes</span>
+            </div>
+            <div class="hero-price-sep" aria-hidden="true"></div>
+            <div class="hero-price-chip">
+              <span class="hero-price-amount">325€</span>
+              <span class="hero-price-label">Cama 135 · mes</span>
+            </div>
+          </div>
+        </div>
+        <!-- /hero-text-col -->
+
+        <!-- ── COLUMNA DERECHA: foto redondeada ── -->
+        <div class="hero-img-col" data-animate>
+          <!-- Foto principal en forma redondeada — edita src -->
+          <div class="hero-img-frame">
+            <img
+              src="fotos/Playa_avenida.jpg"
+              alt="Vistas al mar desde el piso en El Zapillo, Almería — palmeras y playa"
+              class="hero-img"
+              loading="eager"
+            />
+          </div>
+
+          <!-- Sello circular decorativo (como en la referencia) -->
+          <div class="hero-badge-stamp" aria-hidden="true">
+            <svg viewBox="0 0 100 100" width="90" height="90">
+              <defs>
+                <path
+                  id="circlePath"
+                  d="M 50,50 m -30,0 a 30,30 0 1,1 60,0 a 30,30 0 1,1 -60,0"
+                />
+              </defs>
+              <circle
+                cx="50"
+                cy="50"
+                r="44"
+                fill="white"
+                stroke="var(--accent)"
+                stroke-width="1.5"
+              />
+              <text
+                font-size="9"
+                font-weight="700"
+                fill="var(--accent)"
+                font-family="var(--font)"
+                letter-spacing="2"
+              >
+                <textPath href="#circlePath">
+                  ZAPILLO HABITACIONES · ALMERÍA ·
+                </textPath>
+              </text>
+              <!-- Z con ola en el centro -->
+              <text
+                x="50"
+                y="55"
+                text-anchor="middle"
+                font-size="22"
+                font-weight="900"
+                fill="var(--bg-dark)"
+                font-family="var(--font)"
+              >
+                Z
+              </text>
+              <path
+                d="M35 62 Q40 59 45 62 Q50 65 55 62 Q60 59 65 62"
+                stroke="var(--accent)"
+                stroke-width="1.5"
+                fill="none"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+
+          <!-- Trust badges flotantes -->
+          <div class="hero-float-badge hero-float-1" data-animate>
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="var(--accent)"
+              stroke-width="2"
+              stroke-linecap="round"
+            >
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+              <polyline points="9 22 9 12 15 12 15 22" />
+            </svg>
+            <div>
+              <strong>5ª planta</strong>
+              <span>vistas al mar</span>
+            </div>
+          </div>
+          <div class="hero-float-badge hero-float-2" data-animate>
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="var(--accent)"
+              stroke-width="2"
+              stroke-linecap="round"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <polyline points="12 6 12 12 16 14" />
+            </svg>
+            <div>
+              <strong>Respuesta en &lt;24h</strong>
+              <span>sin compromiso</span>
+            </div>
+          </div>
+        </div>
+        <!-- /hero-img-col -->
+      </div>
+      <!-- /hero-inner -->
+
+      <!-- Tags de confianza rápidos — fila inferior -->
+      <div class="hero-trust-bar">
+        <div class="hero-trust-inner">
+          <span class="hero-trust-item">
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            >
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+            El Zapillo, Almería
+          </span>
+          <span class="hero-trust-dot" aria-hidden="true">·</span>
+          <span class="hero-trust-item">
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            >
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+              <path d="M6 12v5c3 3 9 3 12 0v-5" />
+            </svg>
+            10 min de la UAL en bus
+          </span>
+          <span class="hero-trust-dot" aria-hidden="true">·</span>
+          <span class="hero-trust-item">
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            >
+              <rect x="1" y="4" width="22" height="16" rx="2" />
+              <line x1="1" y1="10" x2="23" y2="10" />
+            </svg>
+            Completamente amueblado
+          </span>
+          <span class="hero-trust-dot" aria-hidden="true">·</span>
+          <span class="hero-trust-item">
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            >
+              <circle cx="7.5" cy="15.5" r="5.5" />
+              <path d="M21 2l-9.6 9.6M15.5 7.5l3 3" />
+            </svg>
+            Llave propia en cada habitación
+          </span>
+          <span class="hero-trust-dot" aria-hidden="true">·</span>
+          <span class="hero-trust-item">
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            >
+              <path d="M3 18v-6a9 9 0 0 1 18 0v6" />
+              <path
+                d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3z"
+              />
+              <path
+                d="M3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"
+              />
+            </svg>
+            Sin comisiones
+          </span>
+        </div>
+      </div>
+    </section>
+    <!-- ===== FIN HERO ===== -->
+
+    <!-- ===== INICIO TICKER / FRANJA ANIMADA ===== -->
+    <div class="ticker-wrap" aria-hidden="true">
+      <div class="ticker-track">
+        <span>ALMERÍA</span><span>·</span> <span>EL ZAPILLO</span><span>·</span>
+        <span>UAL A 10 MIN EN BUS</span><span>·</span>
+        <span>DESDE 300€/MES</span><span>·</span> <span>PISO AMUEBLADO</span
+        ><span>·</span> <span>2 BAÑOS</span><span>·</span> <span>ALMERÍA</span
+        ><span>·</span> <span>EL ZAPILLO</span><span>·</span>
+        <span>UAL A 10 MIN EN BUS</span><span>·</span>
+        <span>DESDE 300€/MES</span><span>·</span> <span>PISO AMUEBLADO</span
+        ><span>·</span> <span>2 BAÑOS</span><span>·</span>
+      </div>
+    </div>
+    <!-- ===== FIN TICKER ===== -->
+
+    <!-- ===== INICIO HABITACIONES ===== -->
+    <!-- ===== INICIO HABITACIONES ===== -->
+    <!--
+  CÓMO EDITAR HABITACIONES:
+  - Cada .room-card tiene data-room="ID" que conecta con el JS
+  - En script.js busca ROOMS_DATA para editar fotos, precios, descripción y specs
+  - Las fotos van en la carpeta fotos/ — pon el nombre en el array "photos"
+  - Badge: cambia la clase entre "available", "last" o "taken"
+-->
+    <section class="rooms" id="habitaciones">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">Las habitaciones</div>
+          <h2 class="section-title">Elige la tuya</h2>
+          <p class="section-sub">
+            Todas amuebladas con escritorio, armario y luz natural.
+            <strong>Cada habitación tiene su propia llave.</strong> Revisa
+            disponibilidad antes de contactar.
+          </p>
+        </div>
+
+        <!-- Filtros -->
+        src
+        <div class="room-filters">
+          <button class="filt active" data-filter="all">Todas</button>
+          <button class="filt" data-filter="individual">Cama 90</button>
+          <button class="filt" data-filter="doble">Cama 135</button>
+        </div>
+
+        <div class="rooms-grid" id="roomsGrid">
+          <!-- ======================================
+           HABITACIÓN BORIS — cama 90, disponible
+           Para editar: busca "boris" en ROOMS_DATA (script.js)
+           ====================================== -->
+          <article class="room-card" data-type="individual" data-room="boris">
+            <div class="room-img-wrap">
+              <!-- FOTO PORTADA — cambia el src cuando tengas las fotos -->
+              <img
+                src="fotos/Habitacion_Boris.jpg"
+                alt="Habitación Boris — cama 90 cm, escritorio, vistas al mar"
+                loading="lazy"
+              />
+              <!-- Badge: cambia clase a "available", "last" o "taken" y el texto -->
+              <div class="room-badge available">Reservada</div>
+              <div class="room-price-tag">300€<span>/mes</span></div>
+            </div>
+            <div class="room-body">
+              <div class="room-title-row">
+                <h3>Habitación Boris</h3>
+                <!-- Badge llave propia — no borrar -->
+                <span class="key-badge"
+                  ><svg
+                    width="13"
+                    height="13"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="7.5" cy="15.5" r="5.5" />
+                    <path d="M21 2l-9.6 9.6M15.5 7.5l3 3" />
+                  </svg>
+                  Llave propia</span
+                >
+              </div>
+              <p class="room-type">Cama 90 cm · Vistas al mar</p>
+              <ul class="room-specs">
+                <li><i data-lucide="bed-single"></i> Cama 90 cm</li>
+                <li><i data-lucide="monitor"></i> Escritorio + lámpara</li>
+                <li><i data-lucide="archive"></i> Armario con espejo</li>
+                <li>
+                  <i data-lucide="waves"></i> Vistas al mar · Ventana climalit
+                </li>
+              </ul>
+              <button
+                class="room-cta-gallery"
+                data-room="boris"
+                aria-label="Ver galería de habitación Boris"
+              >
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                >
+                  <rect x="3" y="3" width="18" height="18" rx="2" />
+                  <circle cx="8.5" cy="8.5" r="1.5" />
+                  <path d="M21 15l-5-5L5 21" />
+                </svg>
+                Ver fotos y detalles
+              </button>
+              <a href="#formulario" class="room-cta">Solicitar habitación</a>
+            </div>
+          </article>
+
+          <!-- ======================================
+           HABITACIÓN METTE — cama 135, disponible
+           Para editar: busca "mette" en ROOMS_DATA (script.js)
+           ====================================== -->
+          <article class="room-card" data-type="doble" data-room="mette">
+            <div class="room-img-wrap">
+              <img
+                src="fotos/Habitacion_Mette.jpg"
+                alt="Habitación Mette — cama 135 cm, tranquila"
+                loading="lazy"
+              />
+              <div class="room-badge available">La última disponible desde el 16 sept. 2026</div>
+              <div class="room-price-tag">325€<span>/mes</span></div>
+            </div>
+            <div class="room-body">
+              <div class="room-title-row">
+                <h3>Habitación Mette</h3>
+                <span class="key-badge"
+                  ><svg
+                    width="13"
+                    height="13"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="7.5" cy="15.5" r="5.5" />
+                    <path d="M21 2l-9.6 9.6M15.5 7.5l3 3" />
+                  </svg>
+                  Llave propia</span
+                >
+              </div>
+              <p class="room-type">Cama 135 cm · Tranquila</p>
+              <ul class="room-specs">
+                <li><i data-lucide="bed-double"></i> Cama 135 cm</li>
+                <li><i data-lucide="tv"></i> TV en la habitación</li>
+                <li><i data-lucide="archive"></i> Armario con espejo</li>
+                <li><i data-lucide="sun"></i> Ventana climalit exterior</li>
+              </ul>
+              <button
+                class="room-cta-gallery"
+                data-room="mette"
+                aria-label="Ver galería de habitación Mette"
+              >
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                >
+                  <rect x="3" y="3" width="18" height="18" rx="2" />
+                  <circle cx="8.5" cy="8.5" r="1.5" />
+                  <path d="M21 15l-5-5L5 21" />
+                </svg>
+                Ver fotos y detalles
+              </button>
+              <a href="#formulario" class="room-cta">Solicitar habitación</a>
+            </div>
+          </article>
+
+          <!-- ======================================
+           HABITACIÓN FREDDY — cama 90, reservada
+           Para editar: busca "freddy" en ROOMS_DATA (script.js)
+           ====================================== -->
+          <article
+            class="room-card room-card--taken"
+            data-type="individual"
+            data-room="freddy"
+          >
+            <div class="room-img-wrap">
+              <img
+                src="fotos/Habitacion_Freddy3.jpg"
+                alt="Habitación Freddy — cama 90 cm"
+                loading="lazy"
+              />
+              <div class="room-badge taken">Reservada</div>
+              <div class="room-price-tag">300€<span>/mes</span></div>
+            </div>
+            <div class="room-body">
+              <div class="room-title-row">
+                <h3>Habitación Freddy</h3>
+                <span class="key-badge"
+                  ><svg
+                    width="13"
+                    height="13"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="7.5" cy="15.5" r="5.5" />
+                    <path d="M21 2l-9.6 9.6M15.5 7.5l3 3" />
+                  </svg>
+                  Llave propia</span
+                >
+              </div>
+              <p class="room-type">Cama 90 cm · Vistas al mar</p>
+              <ul class="room-specs">
+                <li><i data-lucide="bed-single"></i> Cama 90 cm</li>
+                <li><i data-lucide="monitor"></i> Escritorio con lámpara</li>
+                <li><i data-lucide="archive"></i> Armario con espejo</li>
+                <li>
+                  <i data-lucide="waves"></i> Vistas al mar · Ventana climalit
+                </li>
+              </ul>
+              <button
+                class="room-cta-gallery"
+                data-room="freddy"
+                aria-label="Ver galería de habitación Freddy"
+              >
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                >
+                  <rect x="3" y="3" width="18" height="18" rx="2" />
+                  <circle cx="8.5" cy="8.5" r="1.5" />
+                  <path d="M21 15l-5-5L5 21" />
+                </svg>
+                Ver fotos y detalles
+              </button>
+              <a href="#formulario" class="room-cta room-cta--wait"
+                >Lista de espera</a
+              >
+            </div>
+          </article>
+
+          <!-- ======================================
+           HABITACIÓN MARGAUX — cama 135, reservada
+           Para editar: busca "margaux" en ROOMS_DATA (script.js)
+           ====================================== -->
+          <article
+            class="room-card room-card--taken"
+            data-type="doble"
+            data-room="margaux"
+          >
+            <div class="room-img-wrap">
+              <img
+                src="fotos/Habitacion_Margaux10.jpg"
+                alt="Habitación Margaux — cama 135 cm"
+                loading="lazy"
+              />
+              <div class="room-badge taken">Reservada</div>
+              <div class="room-price-tag">325€<span>/mes</span></div>
+            </div>
+            <div class="room-body">
+              <div class="room-title-row">
+                <h3>Habitación Margaux</h3>
+                <span class="key-badge"
+                  ><svg
+                    width="13"
+                    height="13"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="7.5" cy="15.5" r="5.5" />
+                    <path d="M21 2l-9.6 9.6M15.5 7.5l3 3" />
+                  </svg>
+                  Llave propia</span
+                >
+              </div>
+              <p class="room-type">Cama 135 cm · Vistas al mar</p>
+              <ul class="room-specs">
+                <li><i data-lucide="bed-double"></i> Cama 135 cm</li>
+                <li><i data-lucide="monitor"></i> Escritorio + lámpara</li>
+                <li><i data-lucide="archive"></i> Armario con espejo</li>
+                <li>
+                  <i data-lucide="waves"></i> Vistas al mar · Ventana climalit
+                </li>
+              </ul>
+              <button
+                class="room-cta-gallery"
+                data-room="margaux"
+                aria-label="Ver galería de habitación Margaux"
+              >
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                >
+                  <rect x="3" y="3" width="18" height="18" rx="2" />
+                  <circle cx="8.5" cy="8.5" r="1.5" />
+                  <path d="M21 15l-5-5L5 21" />
+                </svg>
+                Ver fotos y detalles
+              </button>
+              <a href="#formulario" class="room-cta room-cta--wait"
+                >Lista de espera</a
+              >
+            </div>
+          </article>
+        </div>
+        <!-- /rooms-grid -->
+
+        <div class="rooms-note">
+          <i data-lucide="info"></i>
+          Los precios son solo de la habitación. Luz, agua, internet y limpieza
+          se reparten entre los inquilinos.
+          <a href="#gastos">Ver cómo funcionan los gastos →</a>
+        </div>
+      </div>
+    </section>
+    <!-- ===== FIN HABITACIONES ===== -->
+
+    <!-- ===== INICIO EL PISO ===== -->
+    <!--
+  CÓMO EDITAR ESTANCIAS:
+  - Cada .space-card tiene data-room="ID" que abre el modal de galería
+  - En script.js busca ROOMS_DATA para editar fotos y descripciones
+  - Las fotos van en la carpeta fotos/ — pon los nombres en el array "photos"
+-->
+    <section class="apartment" id="el-piso">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">El piso</div>
+          <h2 class="section-title">Conoce cada rincón</h2>
+          <p class="section-sub">
+            Pincha en cualquier estancia para ver todas las fotos y su
+            descripción.
+          </p>
+        </div>
+
+        <!-- GRID DE ESTANCIAS — 9 tarjetas clicables -->
+        <div class="spaces-grid">
+          <!-- HABITACIÓN BORIS — foto portada + abre modal -->
+          <button
+            class="space-card space-card--room"
+            data-room="boris"
+            aria-label="Ver habitación Boris"
+          >
+            <div class="space-card-img-wrap">
+              <img
+                src="fotos/Habitacion_Boris2.jpg"
+                alt="Habitación Boris"
+                loading="lazy"
+              />
+              <div class="space-card-overlay">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                >
+                  <rect x="3" y="3" width="18" height="18" rx="2" />
+                  <circle cx="8.5" cy="8.5" r="1.5" />
+                  <path d="M21 15l-5-5L5 21" />
+                </svg>
+                <span>Ver fotos</span>
+              </div>
+            </div>
+            <div class="space-card-body">
+              <span class="space-card-type">Habitación</span>
+              <strong>Boris</strong>
+              <span class="space-card-sub">Cama 90 · Vistas al mar</span>
+            </div>
+          </button>
+
+          <!-- HABITACIÓN METTE -->
+          <button
+            class="space-card space-card--room"
+            data-room="mette"
+            aria-label="Ver habitación Mette"
+          >
+            <div class="space-card-img-wrap">
+              <img
+                src="fotos/Habitacion_Mette2.jpg"
+                alt="Habitación Mette"
+                loading="lazy"
+              />
+              <div class="space-card-overlay">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                >
+                  <rect x="3" y="3" width="18" height="18" rx="2" />
+                  <circle cx="8.5" cy="8.5" r="1.5" />
+                  <path d="M21 15l-5-5L5 21" />
+                </svg>
+                <span>Ver fotos</span>
+              </div>
+            </div>
+            <div class="space-card-body">
+              <span class="space-card-type">Habitación</span>
+              <strong>Mette</strong>
+              <span class="space-card-sub">Cama 135 · Tranquilidad total</span>
+            </div>
+          </button>
+
+          <!-- HABITACIÓN FREDDY -->
+          <button
+            class="space-card space-card--room"
+            data-room="freddy"
+            aria-label="Ver habitación Freddy"
+          >
+            <div class="space-card-img-wrap">
+              <img
+                src="fotos/Habitacion_Freddy2.jpg"
+                alt="Habitación Freddy"
+                loading="lazy"
+              />
+              <div class="space-card-overlay">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                >
+                  <rect x="3" y="3" width="18" height="18" rx="2" />
+                  <circle cx="8.5" cy="8.5" r="1.5" />
+                  <path d="M21 15l-5-5L5 21" />
+                </svg>
+                <span>Ver fotos</span>
+              </div>
+            </div>
+            <div class="space-card-body">
+              <span class="space-card-type">Habitación</span>
+              <strong>Freddy</strong>
+              <span class="space-card-sub">Cama 90 · Vistas al mar</span>
+            </div>
+          </button>
+
+          <!-- HABITACIÓN MARGAUX -->
+          <button
+            class="space-card space-card--room"
+            data-room="margaux"
+            aria-label="Ver habitación Margaux"
+          >
+            <div class="space-card-img-wrap">
+              <img
+                src="fotos/Habitacion_Margaux11.jpg"
+                alt="Habitación Margaux"
+                loading="lazy"
+              />
+              <div class="space-card-overlay">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                >
+                  <rect x="3" y="3" width="18" height="18" rx="2" />
+                  <circle cx="8.5" cy="8.5" r="1.5" />
+                  <path d="M21 15l-5-5L5 21" />
+                </svg>
+                <span>Ver fotos</span>
+              </div>
+            </div>
+            <div class="space-card-body">
+              <span class="space-card-type">Habitación</span>
+              <strong>Margaux</strong>
+              <span class="space-card-sub">Cama 135 · Vistas al mar</span>
+            </div>
+          </button>
+
+          <!-- SALÓN — tarjeta ancha (ocupa 2 columnas en desktop) -->
+          <button
+            class="space-card space-card--common space-card--wide"
+            data-room="salon"
+            aria-label="Ver salón"
+          >
+            <div class="space-card-img-wrap">
+              <img
+                src="fotos/Salon3.jpg"
+                alt="Salón comedor con terraza"
+                loading="lazy"
+              />
+              <div class="space-card-overlay">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                >
+                  <rect x="3" y="3" width="18" height="18" rx="2" />
+                  <circle cx="8.5" cy="8.5" r="1.5" />
+                  <path d="M21 15l-5-5L5 21" />
+                </svg>
+                <span>Ver fotos</span>
+              </div>
+            </div>
+            <div class="space-card-body">
+              <span class="space-card-type">Zona común</span>
+              <strong>Salón</strong>
+              <span class="space-card-sub">TV · Mesa comedor · Terraza</span>
+            </div>
+          </button>
+
+          <!-- COCINA -->
+          <button
+            class="space-card space-card--common"
+            data-room="cocina"
+            aria-label="Ver cocina"
+          >
+            <div class="space-card-img-wrap">
+              <img
+                src="fotos/cocina.jpg"
+                alt="Cocina equipada"
+                loading="lazy"
+              />
+              <div class="space-card-overlay">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                >
+                  <rect x="3" y="3" width="18" height="18" rx="2" />
+                  <circle cx="8.5" cy="8.5" r="1.5" />
+                  <path d="M21 15l-5-5L5 21" />
+                </svg>
+                <span>Ver fotos</span>
+              </div>
+            </div>
+            <div class="space-card-body">
+              <span class="space-card-type">Zona común</span>
+              <strong>Cocina</strong>
+              <span class="space-card-sub">Equipada · Lavavajillas</span>
+            </div>
+          </button>
+
+          <!-- BAÑO PASILLO -->
+          <button
+            class="space-card space-card--common"
+            data-room="bano-pasillo"
+            aria-label="Ver baño pasillo"
+          >
+            <div class="space-card-img-wrap">
+              <img
+                src="fotos/Baño_pasillo.jpg"
+                alt="Baño pasillo"
+                loading="lazy"
+              />
+              <div class="space-card-overlay">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                >
+                  <rect x="3" y="3" width="18" height="18" rx="2" />
+                  <circle cx="8.5" cy="8.5" r="1.5" />
+                  <path d="M21 15l-5-5L5 21" />
+                </svg>
+                <span>Ver fotos</span>
+              </div>
+            </div>
+            <div class="space-card-body">
+              <span class="space-card-type">Baño</span>
+              <strong>Baño Pasillo</strong>
+              <span class="space-card-sub">Ducha · Completo</span>
+            </div>
+          </button>
+
+          <!-- BAÑO -->
+          <button
+            class="space-card space-card--common"
+            data-room="bano"
+            aria-label="Ver baño"
+          >
+            <div class="space-card-img-wrap">
+              <!-- SUSTITUYE por foto del segundo baño cuando la tengas -->
+              <img src="fotos/baño_pasillo.jpg" alt="Baño" loading="lazy" />
+              <div class="space-card-overlay">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                >
+                  <rect x="3" y="3" width="18" height="18" rx="2" />
+                  <circle cx="8.5" cy="8.5" r="1.5" />
+                  <path d="M21 15l-5-5L5 21" />
+                </svg>
+                <span>Ver fotos</span>
+              </div>
+            </div>
+            <div class="space-card-body">
+              <span class="space-card-type">Baño</span>
+              <strong>Baño</strong>
+              <span class="space-card-sub">Ducha · Completo</span>
+            </div>
+          </button>
+
+          <!-- TERRAZA -->
+          <button
+            class="space-card space-card--common"
+            data-room="terraza"
+            aria-label="Ver terraza"
+          >
+            <div class="space-card-img-wrap">
+              <img
+                src="fotos/Vistas1.jpeg"
+                alt="Terraza con vistas al mar"
+                loading="lazy"
+              />
+              <div class="space-card-overlay">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                >
+                  <rect x="3" y="3" width="18" height="18" rx="2" />
+                  <circle cx="8.5" cy="8.5" r="1.5" />
+                  <path d="M21 15l-5-5L5 21" />
+                </svg>
+                <span>Ver fotos</span>
+              </div>
+            </div>
+            <div class="space-card-body">
+              <span class="space-card-type">Exterior</span>
+              <strong>Terraza</strong>
+              <span class="space-card-sub">Vistas al mar · Playa enfrente</span>
+            </div>
+          </button>
+        </div>
+        <!-- /spaces-grid -->
+
+        <!-- Info rápida del piso -->
+        <div class="apt-info-grid">
+          <div class="apt-info-card">
+            <div class="apt-info-icon"><i data-lucide="home"></i></div>
+            <strong>El piso</strong>
+            <p>
+              5ª planta · 4 habitaciones · 2 baños · salón · cocina equipada ·
+              mucha luz natural
+            </p>
+          </div>
+          <div class="apt-info-card">
+            <div class="apt-info-icon"><i data-lucide="key"></i></div>
+            <strong>Privacidad total</strong>
+            <p>
+              Cada habitación tiene su propia llave. Tu espacio es solo tuyo.
+            </p>
+          </div>
+          <div class="apt-info-card">
+            <div class="apt-info-icon"><i data-lucide="map-pin"></i></div>
+            <strong>Ubicación</strong>
+            <p>
+              El Zapillo, Almería · 10 min en bus a la UAL · carril bici directo
+            </p>
+          </div>
+          <div class="apt-info-card">
+            <div class="apt-info-icon"><i data-lucide="sofa"></i></div>
+            <strong>Salón</strong>
+            <p>
+              Mesa comedor, sofá, TV, terraza con vistas al mar y muy buena luz
+              natural
+            </p>
+          </div>
+          <div class="apt-info-card">
+            <div class="apt-info-icon"><i data-lucide="utensils"></i></div>
+            <strong>Cocina</strong>
+            <p>
+              Nevera, inducción, lavavajillas, microondas y utensilios incluidos
+            </p>
+          </div>
+          <div class="apt-info-card">
+            <div class="apt-info-icon">
+              <i data-lucide="washing-machine"></i>
+            </div>
+            <strong>Lavadora</strong>
+            <p>Lavadora de uso compartido disponible en el piso</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===== FIN EL PISO ===== -->
+
+    <!-- ===== INICIO GALERÍA STRIP ===== -->
+    <section class="extra-gallery" aria-hidden="true">
+      <div class="gallery-strip">
+        <div class="gallery-strip-item">
+          <img src="fotos/Playa_avenida.jpg" alt="" loading="lazy" />
+        </div>
+        <div class="gallery-strip-item">
+          <img src="fotos/Playa.jpg" alt="" loading="lazy" />
+        </div>
+        <div class="gallery-strip-item">
+          <img src="fotos/vistas2.jpg" alt="" loading="lazy" />
+        </div>
+        <div class="gallery-strip-item">
+          <img src="fotos/Vistas1.jpeg" alt="" loading="lazy" />
+        </div>
+        <div class="gallery-strip-item">
+          <img src="fotos/vistas4.jpg" alt="" loading="lazy" />
+        </div>
+        <div class="gallery-strip-item">
+          <img src="fotos/playa_1.jpg" alt="" loading="lazy" />
+        </div>
+        <div class="gallery-strip-item">
+          <img src="fotos/salon2.jpg" alt="" loading="lazy" />
+        </div>
+        <div class="gallery-strip-item">
+          <img src="fotos/salon4.jpg" alt="" loading="lazy" />
+        </div>
+        <div class="gallery-strip-item">
+          <img src="fotos/habitacion_mette2.jpg" alt="" loading="lazy" />
+        </div>
+        <div class="gallery-strip-item">
+          <img src="fotos/baño_pasillo2.jpg" alt="" loading="lazy" />
+        </div>
+        <div class="gallery-strip-item">
+          <img src="fotos/Playa_avenida.jpg" alt="" loading="lazy" />
+        </div>
+        <div class="gallery-strip-item">
+          <img src="fotos/Playa.jpg" alt="" loading="lazy" />
+        </div>
+        <div class="gallery-strip-item">
+          <img src="fotos/vistas2.jpg" alt="" loading="lazy" />
+        </div>
+        <div class="gallery-strip-item">
+          <img src="fotos/Vistas1.jpeg" alt="" loading="lazy" />
+        </div>
+        <div class="gallery-strip-item">
+          <img src="fotos/vistas4.jpg" alt="" loading="lazy" />
+        </div>
+        <div class="gallery-strip-item">
+          <img src="fotos/playa_1.jpg" alt="" loading="lazy" />
+        </div>
+        <div class="gallery-strip-item">
+          <img src="fotos/salon3.jpg" alt="" loading="lazy" />
+        </div>
+        <div class="gallery-strip-item">
+          <img src="fotos/salon4.jpg" alt="" loading="lazy" />
+        </div>
+        <div class="gallery-strip-item">
+          <img src="fotos/habitacion_mette2.jpg" alt="" loading="lazy" />
+        </div>
+        <div class="gallery-strip-item">
+          <img src="fotos/baño_pasillo3.jpg" alt="" loading="lazy" />
+        </div>
+      </div>
+    </section>
+    <!-- ===== FIN GALERÍA STRIP ===== -->
+
+    <!-- ===== INICIO GASTOS ===== -->
+    <!-- Edita: importes estimados y distribución de gastos -->
+    <section class="costs" id="gastos">
+      <div class="container">
+        <div class="costs-layout">
+          <div class="costs-text">
+            <div class="section-eyebrow">Transparencia total</div>
+            <h2 class="section-title">Los gastos, sin letra pequeña</h2>
+            <p>
+              El precio de la habitación es solo eso: la habitación. Los gastos
+              de suministros se reparten a partes iguales entre todos los
+              inquilinos del piso. Nada de sorpresas.
+            </p>
+
+            <div class="costs-breakdown">
+              <div class="cost-item">
+                <div class="cost-icon"><i data-lucide="zap"></i></div>
+                <div class="cost-info">
+                  <strong>Luz</strong>
+                  <p>
+                    Se reparte entre todos los inquilinos. Varía según consumo y
+                    época del año. En invierno puede subir porque hay un
+                    radiador en cada habitación.
+                  </p>
+                </div>
+              </div>
+              <div class="cost-item">
+                <div class="cost-icon"><i data-lucide="droplets"></i></div>
+                <div class="cost-info">
+                  <strong>Agua</strong>
+                  <p>
+                    Coste mensual compartido. Suele ser el gasto más estable del
+                    mes.
+                  </p>
+                </div>
+              </div>
+              <div class="cost-item">
+                <div class="cost-icon"><i data-lucide="wifi"></i></div>
+                <div class="cost-info">
+                  <strong>Internet</strong>
+                  <p>
+                    La cuota de internet se divide entre los inquilinos.
+                    Aproximadamente 10–15€/persona/mes.
+                  </p>
+                </div>
+              </div>
+              <div class="cost-item">
+                <div class="cost-icon"><i data-lucide="sparkles"></i></div>
+                <div class="cost-info">
+                  <strong>Limpieza de zonas comunes</strong>
+                  <p>
+                    Los inquilinos se comprometen a mantener limpia su
+                    habitación, así como las zonas comunes. Una vez al mes, irá
+                    una empresa de limpieza, cuyo importe también se reparte
+                    entre los inquilios.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="costs-summary-card">
+            <div class="summary-header">Estimación mensual total</div>
+            <div class="summary-example">
+              <span class="example-label">Ejemplo con 4 inquilinos</span>
+              <div class="summary-row">
+                <span>Habitación cama 90</span>
+                <span class="summary-price">300€</span>
+              </div>
+              <div class="summary-row">
+                <span>Gastos estimados (parte)</span>
+                <span class="summary-price">~40–60€</span>
+              </div>
+              <div class="summary-total">
+                <span>Total estimado</span>
+                <span>~340–360€</span>
+              </div>
+            </div>
+            <div class="summary-note">
+              El reparto exacto depende de cuántos inquilinos haya en el piso en
+              cada momento.
+            </div>
+            <a href="#formulario" class="btn-primary-full"
+              >Preguntar sin compromiso</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===== FIN GASTOS ===== -->
+
+    <!-- ===== INICIO UBICACIÓN ===== -->
+    <section class="location" id="ubicacion">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">Dónde estamos</div>
+          <h2 class="section-title">El Zapillo, Almería</h2>
+          <p class="section-sub">
+            Uno de los barrios más cómodos para estudiantes de la UAL. Cerca de
+            todo.
+          </p>
+        </div>
+
+        <div class="location-layout">
+          <div class="location-points">
+            <div class="loc-item">
+              <div class="loc-num">10'</div>
+              <div>
+                <strong>Universidad de Almería (UAL)</strong>
+                <p>
+                  10 minutos en bus. Carril bici desde el piso hasta la
+                  universidad.
+                </p>
+              </div>
+            </div>
+            <div class="loc-item">
+              <div class="loc-num">03'</div>
+              <div>
+                <strong>Supermercado</strong>
+                <p>Spar a menos de 2 minutos andando. Día a 7 minutos.</p>
+              </div>
+            </div>
+            <div class="loc-item">
+              <div class="loc-num">02'</div>
+              <div>
+                <strong>Parada de bus a 1 minuto</strong>
+                <p>Línea directa al centro de Almería y a la UAL</p>
+              </div>
+            </div>
+            <div class="loc-item">
+              <div class="loc-num">00'</div>
+              <div>
+                <strong>Playa del Zapillo</strong>
+                <p>La playa está justo enfrente. Bienvenido a Almería!!.</p>
+              </div>
+            </div>
+            <div class="loc-item">
+              <div class="loc-num">10'</div>
+              <div>
+                <strong>Centro de Almería</strong>
+                <p>10 minutos en bus al Paseo y la zona comercial</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sustituye por iframe de Google Maps si lo prefieres -->
+          <div class="location-map">
+            <div class="map-pin-effect">
+              <div class="map-pin-dot"></div>
+              <div class="map-pin-ring"></div>
+            </div>
+            <p>El Zapillo · Almería</p>
+            <a
+              href="https://www.google.com/maps/place/El+Zapillo,+04007+Almer%C3%ADa/@36.8252079,-2.4481904,18z/data=!4m6!3m5!1s0xd7a9dee06c88a31:0xe6579893cf412f37!8m2!3d36.8277866!4d-2.4481902!16s%2Fg%2F12233bp7?entry=ttu&g_ep=EgoyMDI2MDUyNi4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              rel="noopener"
+              class="btn-map"
+              >Ver en Google Maps →</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===== FIN UBICACIÓN ===== -->
+
+    <!-- ===== INICIO PROCESO DE RESERVA ===== -->
+    <section class="process" id="proceso">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">Sin complicaciones</div>
+          <h2 class="section-title">Así se reserva</h2>
+        </div>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">01</div>
+            <div class="step-body">
+              <h3>Envías el formulario</h3>
+              <p>
+                Cuéntanos quién eres y qué fechas necesitas. Solo 2 minutos. Sin
+                compromiso.
+              </p>
+            </div>
+          </div>
+          <div class="step-arrow">→</div>
+          <div class="step">
+            <div class="step-num">02</div>
+            <div class="step-body">
+              <h3>Te respondemos</h3>
+              <p>
+                En menos de 24h te confirmamos disponibilidad y resolvemos tus
+                dudas por WhatsApp o email.
+              </p>
+            </div>
+          </div>
+          <div class="step-arrow">→</div>
+          <div class="step">
+            <div class="step-num">03</div>
+            <div class="step-body">
+              <h3>Visita</h3>
+              <p>Si es posible, ven a verlo.</p>
+            </div>
+          </div>
+          <div class="step-arrow">→</div>
+          <div class="step">
+            <div class="step-num">04</div>
+            <div class="step-body">
+              <h3>Firmas y ya es tuya</h3>
+              <p>
+                Contrato, fianza de un mes y medio y listo. La habitación queda
+                reservada a tu nombre.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="process-cta">
+          <a href="#formulario" class="btn-hero-primary">Empezar ahora →</a>
+          <span>Sin compromiso · Respuesta en &lt;24h</span>
+        </div>
+      </div>
+    </section>
+    <!-- ===== FIN PROCESO ===== -->
+
+    <!-- ===== INICIO CONVIVENCIA ===== -->
+    <section class="living" id="convivencia">
+      <div class="container">
+        <div class="living-layout">
+          <div class="living-imgs">
+            <img
+              src="fotos/ImagenEdificio.svg"
+              alt="Habitación ordenada con escritorio"
+              class="living-img-main"
+              loading="lazy"
+            />
+            <img
+              src="fotos/vistas2.jpg"
+              alt="Vista del piso"
+              class="living-img-side"
+              loading="lazy"
+            />
+          </div>
+          <div class="living-text">
+            <div class="section-eyebrow">El ambiente</div>
+            <h2 class="section-title">¿Encajas aquí?</h2>
+            <p>
+              Buscamos personas respetuosas que quieran estudiar y convivir la
+              mejor experiencia de su vida. No hace falta ser perfectos, solo
+              tener sentido común.
+            </p>
+
+            <ul class="living-list">
+              <li>✓ Estudiantes universitarios o en prácticas</li>
+              <li>✓ Ambiente tranquilo</li>
+              <li>✓ Respeto por el espacio compartido</li>
+              <li>✓ Sin humos dentro del piso, a fumar a la terraza!</li>
+              <li>✓ Organización para limpiar zonas comunes</li>
+              <li>✓ Cualquier nacionalidad bienvenida</li>
+            </ul>
+
+            <p class="living-note">
+              Si tienes dudas sobre si encajas, escríbenos. Hablamos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===== FIN CONVIVENCIA ===== -->
+
+    <!-- ===== INICIO FAQ ===== -->
+    <!-- Edita: pregunta y respuesta de cada .faq-item -->
+    <section class="faq" id="faq">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow" data-i18n="faq.eyebrow">
+            Preguntas frecuentes
+          </div>
+          <h2 class="section-title" data-i18n="faq.title">
+            Todo lo que quieres saber
+          </h2>
+        </div>
+
+        <div class="faq-layout">
+          <div class="faq-list">
+            <div class="faq-item">
+              <button class="faq-q" aria-expanded="false">
+                ¿Qué incluye el precio de la habitación?
+                <span class="faq-ico" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-a" hidden>
+                <p>
+                  El precio (300€ o 325€/mes según cama) incluye la habitación
+                  amueblada con cama, escritorio, silla, armario y lámpara. Los
+                  gastos de luz, agua, internet y limpieza de zonas comunes se
+                  suman aparte y se reparten entre los inquilinos del piso.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q" aria-expanded="false">
+                ¿Cuánto me costarán los gastos cada mes?
+                <span class="faq-ico" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-a" hidden>
+                <p>
+                  Depende de cuántos inquilinos haya en el piso y del consumo
+                  real. Orientativamente, con 4 personas, los gastos rondan los
+                  40–60€ por persona al mes.Te podemos decir los gastos del año
+                  anterior para que tengas una idea de los gastos futuros, antes
+                  de que firmes.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q" aria-expanded="false">
+                ¿Cuánto tiempo mínimo tengo que quedarme?
+                <span class="faq-ico" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-a" hidden>
+                <p>
+                  El mínimo es medio curso académico, siempre que se haya
+                  firmado en contrato.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q" aria-expanded="false">
+                ¿Qué pasa si decido irme antes de que finalice el contrato?
+                <span class="faq-ico" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-a" hidden>
+                <p>
+                  Si por cualquier causa sales del piso antes de la finalización
+                  de la estancia, puedes buscar otra persona que ocupe la
+                  habitación hasta la finalización del contrato para que te sea
+                  devuelta la fianza.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q" aria-expanded="false">
+                ¿Puedo reservar desde fuera de Almería o del extranjero?
+                <span class="faq-ico" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-a" hidden>
+                <p>
+                  Sí. Aquí tienes el video para mostrarte el piso y la
+                  habitación. El contrato y la fianza se pueden gestionar de
+                  forma telemática. Te acompañamos en todo el proceso.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q" aria-expanded="false">
+                ¿Qué documentación necesito para firmar?
+                <span class="faq-ico" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-a" hidden>
+                <p>
+                  DNI o pasaporte en vigor. El documento de aceptación de tu
+                  programa. No pedimos avalista para estancias de curso completo
+                  si presentas documentación de la universidad.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-q" aria-expanded="false">
+                ¿Hay fianza? ¿Cuándo se devuelve?
+                <span class="faq-ico" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-a" hidden>
+                <p>
+                  Para reservar una habitación pedimos una fianza de un mes y
+                  medio. Al firmar el contrato se abona el mes en curso más el
+                  coste de internet. La fianza se devuelve siempre que la
+                  habitación esté en buen estado y no haya deudas pendientes.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q" aria-expanded="false">
+                ¿Cómo funciona la limpieza?
+                <span class="faq-ico" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-a" hidden>
+                <p>
+                  Cada inquilino mantiene limpia su habitación. Las zonas
+                  comunes (cocina, baños, salón) las limpia una empresa de
+                  limpieza, al menos, una vez al mes, y el coste se reparte a
+                  partes iguales entre los inquilinos.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q" aria-expanded="false">
+                ¿Se puede ver el piso antes de decidir?
+                <span class="faq-ico" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-a" hidden>
+                <p>
+                  Siempre que sea posible, sí. Quedamos y te lo enseñamos en
+                  persona. Si no puedes venir, te mandamos fotos y vídeo del
+                  piso y la habitación.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-sidebar">
+            <div class="faq-contact-box">
+              <h3>¿Más preguntas?</h3>
+              <p>Escríbenos. Respondemos rápido y sin rollo.</p>
+              <!-- Cambia número de WhatsApp -->
+              <a
+                href="https://wa.me/34600550178?text=Hola%2C%20tengo%20una%20pregunta%20sobre%20el%20piso"
+                class="btn-wa-full"
+                target="_blank"
+                rel="noopener"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  width="18"
+                  height="18"
+                >
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                  />
+                </svg>
+                Escribir por WhatsApp
+              </a>
+              <!-- Cambia email -->
+              <a href="mailto:piso18zapillo@gmail.com" class="btn-email-full"
+                >Enviar email</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===== FIN FAQ ===== -->
+
+    <!-- ===== INICIO FORMULARIO ===== -->
+    <section class="form-section" id="formulario">
+      <div class="container">
+        <div class="form-layout">
+          <div class="form-intro">
+            <div class="section-eyebrow">Solicitar información</div>
+            <h2 class="section-title">Cuéntanos<br />quién eres</h2>
+            <p>
+              Rellena esto y te respondemos lo antes posible. Sin compromiso,
+              sin coste. Es solo para conocerte un poco antes de hablar.
+            </p>
+            <div class="form-reassurances">
+              <div class="reassurance">
+                <i data-lucide="clock"></i> Respuesta en &lt;24h
+              </div>
+              <div class="reassurance">
+                <i data-lucide="shield"></i> Tus datos no se comparten
+              </div>
+              <div class="reassurance">
+                <i data-lucide="message-circle"></i> Te respondemos por WhatsApp
+                o email
+              </div>
+            </div>
+          </div>
+
+          <div class="form-box">
+            <!-- Resumen de errores -->
+            <div
+              class="error-summary"
+              id="errorSummary"
+              role="alert"
+              aria-live="assertive"
+              hidden
+            >
+              <strong>Revisa estos campos:</strong>
+              <ul id="errorList"></ul>
+            </div>
+
+            <!-- Éxito -->
+            <div class="success-box" id="successMessage" role="status" hidden>
+              <div class="success-icon">✓</div>
+              <h3>¡Recibido!</h3>
+              <p>
+                Te respondemos lo antes posible. Mira también el spam por si
+                acaso.
+              </p>
+            </div>
+
+            <form id="leadForm" novalidate aria-label="Formulario de solicitud">
+              <!-- BLOQUE: DATOS PERSONALES -->
+              <fieldset class="form-block">
+                <legend>Tus datos</legend>
+                <div class="form-row-2">
+                  <div class="form-group">
+                    <label for="nombre"
+                      >Nombre <span class="req">*</span></label
+                    >
+                    <input
+                      type="text"
+                      id="nombre"
+                      name="nombre"
+                      class="finput"
+                      placeholder="Tu nombre"
+                      required
+                      autocomplete="given-name"
+                      aria-required="true"
+                      aria-describedby="nombre-err"
+                    />
+                    <span class="ferr" id="nombre-err"></span>
+                  </div>
+                  <div class="form-group">
+                    <label for="apellidos"
+                      >Apellidos <span class="req">*</span></label
+                    >
+                    <input
+                      type="text"
+                      id="apellidos"
+                      name="apellidos"
+                      class="finput"
+                      placeholder="Tus apellidos"
+                      required
+                      autocomplete="family-name"
+                      aria-required="true"
+                      aria-describedby="apellidos-err"
+                    />
+                    <span class="ferr" id="apellidos-err"></span>
+                  </div>
+                </div>
+                <div class="form-row-2">
+                  <div class="form-group">
+                    <label for="email">Email <span class="req">*</span></label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      class="finput"
+                      placeholder="tu@email.com"
+                      required
+                      autocomplete="email"
+                      aria-required="true"
+                      aria-describedby="email-err"
+                    />
+                    <span class="ferr" id="email-err"></span>
+                  </div>
+                  <div class="form-group">
+                    <label for="telefono"
+                      >Teléfono <span class="req">*</span></label
+                    >
+                    <div class="phone-row">
+                      <select
+                        id="prefijo"
+                        name="prefijo"
+                        class="fselect fselect-sm"
+                        aria-label="Prefijo"
+                      >
+                        <option value="+34">🇪🇸 +34</option>
+                        <option value="+49">🇩🇪 +49</option>
+                        <option value="+33">🇫🇷 +33</option>
+                        <option value="+39">🇮🇹 +39</option>
+                        <option value="+44">🇬🇧 +44</option>
+                        <option value="+52">🇲🇽 +52</option>
+                        <option value="+54">🇦🇷 +54</option>
+                        <option value="+351">🇵🇹 +351</option>
+                        <option value="+1">🇺🇸 +1</option>
+                        <option value="+other">Otro</option>
+                      </select>
+                      <input
+                        type="tel"
+                        id="telefono"
+                        name="telefono"
+                        class="finput"
+                        placeholder="600 000 000"
+                        required
+                        aria-required="true"
+                        aria-describedby="telefono-err"
+                      />
+                    </div>
+                    <span class="ferr" id="telefono-err"></span>
+                  </div>
+                </div>
+                <div class="form-row-2">
+                  <div class="form-group">
+                    <label for="pais"
+                      >País de origen <span class="req">*</span></label
+                    >
+                    <input
+                      type="text"
+                      id="pais"
+                      name="pais"
+                      class="finput"
+                      placeholder="España, Italia, México..."
+                      required
+                      aria-required="true"
+                      aria-describedby="pais-err"
+                    />
+                    <span class="ferr" id="pais-err"></span>
+                  </div>
+                  <div class="form-group">
+                    <label for="ciudad">Ciudad de origen</label>
+                    <input
+                      type="text"
+                      id="ciudad"
+                      name="ciudad"
+                      class="finput"
+                      placeholder="Tu ciudad"
+                    />
+                  </div>
+                </div>
+              </fieldset>
+
+              <!-- BLOQUE: DATOS ACADÉMICOS -->
+              <fieldset class="form-block">
+                <legend>Estudios</legend>
+                <div class="form-row-2">
+                  <div class="form-group">
+                    <label for="universidadOrigen"
+                      >Universidad de origen <span class="req">*</span></label
+                    >
+                    <input
+                      type="text"
+                      id="universidadOrigen"
+                      name="universidadOrigen"
+                      class="finput"
+                      placeholder="Tu universidad"
+                      required
+                      aria-required="true"
+                      aria-describedby="universidadOrigen-err"
+                    />
+                    <span class="ferr" id="universidadOrigen-err"></span>
+                  </div>
+                  <div class="form-group">
+                    <label for="facultad"
+                      >Carrera / Estudios <span class="req">*</span></label
+                    >
+                    <input
+                      type="text"
+                      id="facultad"
+                      name="facultad"
+                      class="finput"
+                      placeholder="Ingeniería, Derecho, ADE..."
+                      required
+                      aria-required="true"
+                      aria-describedby="facultad-err"
+                    />
+                    <span class="ferr" id="facultad-err"></span>
+                  </div>
+                </div>
+                <div class="form-row-2">
+                  <div class="form-group">
+                    <label for="departamentoRRII"
+                      >Oficina de RRII de tu universidad</label
+                    >
+                    <input
+                      type="text"
+                      id="departamentoRRII"
+                      name="departamentoRRII"
+                      class="finput"
+                      placeholder="International Relations Office"
+                    />
+                    <span class="fhint"
+                      >Si eres Erasmus o de qué beca de intercambio</span
+                    >
+                  </div>
+                  <div class="form-group">
+                    <label for="emailRRII"
+                      >Email del departamento de RRII</label
+                    >
+                    <input
+                      type="email"
+                      id="emailRRII"
+                      name="emailRRII"
+                      class="finput"
+                      placeholder="rrii@universidad.edu"
+                      aria-describedby="emailRRII-err"
+                    />
+                    <span class="ferr" id="emailRRII-err"></span>
+                  </div>
+                </div>
+                <div class="form-row-2">
+                  <div class="form-group">
+                    <label for="universidadDestino"
+                      >Universidad en Almería <span class="req">*</span></label
+                    >
+                    <select
+                      id="universidadDestino"
+                      name="universidadDestino"
+                      class="fselect"
+                      required
+                      aria-required="true"
+                      aria-describedby="universidadDestino-err"
+                    >
+                      <option value="">Selecciona</option>
+                      <option value="UAL">Universidad de Almería (UAL)</option>
+                      <option value="Otra">Otra / No universidad</option>
+                    </select>
+                    <span class="ferr" id="universidadDestino-err"></span>
+                  </div>
+                  <div class="form-group">
+                    <label for="cursoAcademico"
+                      >Curso académico <span class="req">*</span></label
+                    >
+                    <select
+                      id="cursoAcademico"
+                      name="cursoAcademico"
+                      class="fselect"
+                      required
+                      aria-required="true"
+                      aria-describedby="cursoAcademico-err"
+                    >
+                      <option value="">Selecciona</option>
+                      <option value="2025-26">2025-2026</option>
+                      <option value="2026-27">2026-2027</option>
+                    </select>
+                    <span class="ferr" id="cursoAcademico-err"></span>
+                  </div>
+                </div>
+              </fieldset>
+
+              <!-- BLOQUE: ESTANCIA -->
+              <fieldset class="form-block">
+                <legend>Tu estancia</legend>
+                <div class="form-row-2">
+                  <div class="form-group">
+                    <label for="fechaLlegada"
+                      >Fecha y hora de llegada <span class="req">*</span></label
+                    >
+                    <input
+                      type="date"
+                      id="fechaLlegada"
+                      name="fechaLlegada"
+                      class="finput"
+                      required
+                      aria-required="true"
+                      aria-describedby="fechaLlegada-err"
+                    />
+                    <span class="ferr" id="fechaLlegada-err"></span>
+                  </div>
+                  <div class="form-group">
+                    <label for="fechaSalida"
+                      >Fecha de salida (para estancias de curso completo la
+                      estancia máxima es hasta el 28 de junio a las 10:00 a.m.)
+                      <span class="req">*</span></label
+                    >
+                    <input
+                      type="date"
+                      id="fechaSalida"
+                      name="fechaSalida"
+                      class="finput"
+                      required
+                      aria-required="true"
+                      aria-describedby="fechaSalida-err"
+                    />
+                    <span class="ferr" id="fechaSalida-err"></span>
+                  </div>
+                </div>
+                <div class="form-row-2">
+                  <div class="form-group">
+                    <label for="duracion"
+                      >Duración <span class="req">*</span></label
+                    >
+                    <select
+                      id="duracion"
+                      name="duracion"
+                      class="fselect"
+                      required
+                      aria-required="true"
+                      aria-describedby="duracion-err"
+                    >
+                      <option value="">Selecciona</option>
+                      <option value="5-6 meses">Semestre (5-6 meses)</option>
+                      <option value="curso completo">
+                        Curso completo (9-10 meses)
+                      </option>
+                    </select>
+                    <span class="ferr" id="duracion-err"></span>
+                  </div>
+                  <div class="form-group">
+                    <label for="habitacionInteres">Habitación de interés</label>
+                    <select
+                      id="habitacionInteres"
+                      name="habitacionInteres"
+                      class="fselect"
+                    >
+                      <option value="">Sin preferencia</option>
+                      <option value="Cama 90 - 300€">
+                        Cama 90 cm — 300€/mes
+                      </option>
+                      <option value="Cama 135 - 325€">
+                        Cama 135 cm — 325€/mes
+                      </option>
+                      <option value="Indiferente">
+                        Me da igual, busco la disponible
+                      </option>
+                    </select>
+                  </div>
+                </div>
+              </fieldset>
+
+              <!-- BLOQUE: GRUPO Y EXTRAS -->
+              <fieldset class="form-block">
+                <legend>Un poco más</legend>
+
+                <div class="form-group">
+                  <label id="viajeLabel"
+                    >Cada habitacion es para 1 persona aunque la cama sea de
+                    1,35 m. <span class="req">*</span></label
+                  >
+
+                  <span class="ferr" id="viaje-err"></span>
+                </div>
+
+                <div class="form-row-2">
+                  <div class="form-group">
+                    <label for="idioma"
+                      >Idioma preferido <span class="req">*</span></label
+                    >
+                    <select
+                      id="idioma"
+                      name="idioma"
+                      class="fselect"
+                      required
+                      aria-required="true"
+                      aria-describedby="idioma-err"
+                    >
+                      <option value="">Selecciona</option>
+                      <option value="Español">Español</option>
+                      <option value="Inglés">Inglés</option>
+                      <option value="Francés">Francés</option>
+                      <option value="Otro">Otro</option>
+                    </select>
+                    <span class="ferr" id="idioma-err"></span>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="mensaje">Cuéntanos algo más (opcional)</label>
+                  <textarea
+                    id="mensaje"
+                    name="mensaje"
+                    class="ftextarea"
+                    rows="3"
+                    placeholder="Por qué buscas habitación en Almería, cuándo llegas, qué necesitas saber... lo que quieras."
+                  ></textarea>
+                </div>
+              </fieldset>
+
+              <!-- BLOQUE: PRIVACIDAD Y ENVÍO -->
+              <fieldset class="form-block form-block-legal">
+                <legend class="sr-only">Privacidad</legend>
+                <label class="checkbox-opt" for="privacidad">
+                  <input
+                    type="checkbox"
+                    id="privacidad"
+                    name="privacidad"
+                    required
+                    aria-required="true"
+                    aria-describedby="privacidad-err"
+                  />
+                  <span
+                    >He leído y acepto la
+                    <a href="#" class="ilink">política de privacidad</a>. Mis
+                    datos solo se usan para gestionar mi solicitud.
+                    <span class="req">*</span></span
+                  >
+                </label>
+                <span class="ferr" id="privacidad-err"></span>
+
+                <label class="checkbox-opt" for="marketing">
+                  <input type="checkbox" id="marketing" name="marketing" />
+                  <span
+                    >Acepto recibir información sobre disponibilidad futura
+                    (opcional).</span
+                  >
+                </label>
+
+                <button type="submit" class="btn-submit" id="submitBtn">
+                  <span class="btn-submit-text">Enviar solicitud</span>
+                  <span class="btn-submit-arrow">→</span>
+                </button>
+                <p class="submit-micro">
+                  Sin compromiso · Respuesta en menos de 24h · Privacidad
+                  garantizada
+                </p>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===== FIN FORMULARIO ===== -->
+
+    <!-- ===== INICIO CTA FINAL ===== -->
+    <section class="cta-final">
+      <div class="container">
+        <div class="cta-final-inner">
+          <div class="cta-final-badge">
+            <span class="live-dot"></span> 2 habitaciones disponibles · desde el
+            16 de septiembre 2026
+          </div>
+          <h2>¿La reservas<br /><em>o esperas a que la pille otro?</em></h2>
+          <p>
+            La demanda de habitaciones en El Zapillo es alta cada año. Si te
+            interesa, no esperes.
+          </p>
+          <div class="cta-final-btns">
+            <a href="#formulario" class="btn-hero-primary">Solicitar ahora</a>
+            <a
+              href="https://wa.me/34600550178"
+              class="btn-hero-ghost"
+              target="_blank"
+              rel="noopener"
+            >
+              WhatsApp directo
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===== FIN CTA FINAL ===== -->
+
+    <!-- ===== INICIO FOOTER ===== -->
+    <!-- Edita: email, teléfono, WhatsApp, dirección, redes -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <div class="brand-mark brand-mark-sm">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <text
+                    x="8"
+                    y="12"
+                    font-family="system-ui,sans-serif"
+                    font-weight="900"
+                    font-size="11"
+                    fill="white"
+                    text-anchor="middle"
+                  >
+                    Z
+                  </text>
+                </svg>
+              </div>
+              <!-- Cambia nombre de marca en footer -->
+              <span>Zapillo Habitaciones</span>
+            </div>
+            <!-- Edita descripción -->
+            <p>
+              Habitaciones para estudiantes en El Zapillo, Almería. Cerca de la
+              UAL, ambiente tranquilo, trato directo.
+            </p>
+          </div>
+
+          <div class="footer-col">
+            <h4>Contacto</h4>
+            <ul>
+              <!-- Cambia todos los datos de contacto -->
+              <li>
+                <a href="mailto:erasmusalmeria01@gmail.com"
+                  >erasmusalmeria01@gmail.com</a
+                >
+              </li>
+              <li><a href="tel:+34600550178">+34 600 550 178</a></li>
+              <li>
+                <a
+                  href="https://wa.me/34600550178"
+                  target="_blank"
+                  rel="noopener"
+                  >WhatsApp</a
+                >
+              </li>
+              <li>El Zapillo, Almería</li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>El piso</h4>
+            <ul>
+              <li><a href="#habitaciones">Habitaciones</a></li>
+              <li><a href="#el-piso">El piso</a></li>
+              <li><a href="#gastos">Gastos</a></li>
+              <li><a href="#proceso">Cómo reservar</a></li>
+              <li><a href="#faq">FAQ</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="#">Política de privacidad</a></li>
+              <li><a href="#">Aviso legal</a></li>
+              <li><a href="#">Política de cookies</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <!-- Cambia año y nombre -->
+          <span>© 2026 Zapillo Habitaciones · El Zapillo · Almería</span>
+          <span>Hecho para estudiantes reales</span>
+        </div>
+      </div>
+    </footer>
+    <!-- ===== FIN FOOTER ===== -->
+
+    <!-- Sticky CTA móvil -->
+    <div class="sticky-mob" id="stickyCta">
+      <a href="#formulario" class="btn-sticky">Solicitar habitación</a>
+    </div>
+
+    <!-- ===== MODAL DE ESTANCIA — se rellena por JS al abrir ===== -->
+    <div
+      class="room-modal"
+      id="roomModal"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Galería de estancia"
+      aria-hidden="true"
+    >
+      <div class="room-modal-backdrop" id="roomModalBackdrop"></div>
+      <div class="room-modal-panel">
+        <button
+          class="room-modal-close"
+          id="roomModalClose"
+          aria-label="Cerrar"
+        >
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+            <path
+              d="M1 1l16 16M17 1L1 17"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+        </button>
+
+        <!-- Galería de fotos del modal -->
+        <div class="room-modal-gallery">
+          <div class="room-modal-main-wrap">
+            <img
+              id="roomModalMainImg"
+              src=""
+              alt=""
+              class="room-modal-main-img"
+            />
+            <button
+              class="room-modal-nav room-modal-prev"
+              id="roomModalPrev"
+              aria-label="Foto anterior"
+            >
+              ‹
+            </button>
+            <button
+              class="room-modal-nav room-modal-next"
+              id="roomModalNext"
+              aria-label="Foto siguiente"
+            >
+              ›
+            </button>
+            <div class="room-modal-counter" id="roomModalCounter">1 / 1</div>
+          </div>
+          <!-- Miniaturas -->
+          <div class="room-modal-thumbs" id="roomModalThumbs"></div>
+        </div>
+
+        <!-- Info de la estancia -->
+        <div class="room-modal-info">
+          <div class="room-modal-header">
+            <div>
+              <p class="room-modal-eyebrow" id="roomModalEyebrow"></p>
+              <h2 class="room-modal-title" id="roomModalTitle"></h2>
+            </div>
+            <div class="room-modal-price-wrap" id="roomModalPriceWrap"></div>
+          </div>
+          <p class="room-modal-desc" id="roomModalDesc"></p>
+          <ul class="room-modal-specs" id="roomModalSpecs"></ul>
+          <a href="#formulario" class="room-modal-cta" id="roomModalCta"
+            >Solicitar información →</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- ===== FIN MODAL ===== -->
+
+    <!-- Lightbox de imagen individual (para galería masonry) -->
+    <div
+      class="lightbox"
+      id="lightbox"
+      role="dialog"
+      aria-label="Imagen ampliada"
+      aria-hidden="true"
+    >
+      <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar">
+        ✕
+      </button>
+      <button class="lightbox-prev" id="lightboxPrev" aria-label="Anterior">
+        ‹
+      </button>
+      <button class="lightbox-next" id="lightboxNext" aria-label="Siguiente">
+        ›
+      </button>
+      <div class="lightbox-img-wrap">
+        <img src="" alt="" id="lightboxImg" />
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
