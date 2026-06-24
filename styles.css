@@ -2731,3 +2731,14 @@ ol {
   color: var(--text);
 }
 /* ===== FIN FORM NOTICE ===== */
+/* 1. Forzar el color rojo en el cartel de Boris */
+.cartel-rojo {
+    background-color: #e63946 !important; /* Rojo intenso */
+    color: #ffffff !important;            /* Letras blancas */
+}
+
+/* 2. Efecto ahumado y apagado exclusivo para la foto de Boris */
+.room-card[data-room="boris"] .room-img-wrap img {
+    filter: brightness(0.6) grayscale(30%) !important; /* Oscurece y apaga el color */
+    opacity: 0.7 !important;                           /* Le da transparencia */
+}
