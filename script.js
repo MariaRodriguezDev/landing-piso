@@ -774,7 +774,6 @@ function liveValidate(el) {
     case 'nombre':        vRequired(el, 'El nombre'); break;
     case 'apellidos':     vRequired(el, 'Los apellidos'); break;
     case 'email':         vEmail(el); break;
-    case 'telefono':      vPhone(el); break;
     case 'pais':          vRequired(el, 'El país'); break;
     case 'universidadOrigen': vRequired(el, 'La universidad de origen'); break;
     case 'facultad':      vRequired(el, 'La carrera'); break;
@@ -782,13 +781,10 @@ function liveValidate(el) {
     case 'universidadDestino': vSelect(el, 'la universidad'); break;
     case 'cursoAcademico':     vSelect(el, 'el curso'); break;
     case 'fechaLlegada': {
-      const s = qs('#fechaSalida');
-      if (s?.value) vDates(el, s); else if (!el.value) showErr(el, 'La fecha de llegada es obligatoria.'); else showOk(el);
+      if (!el.value) showErr(el, 'La fecha de llegada es obligatoria.'); else showOk(el);
       break;
     }
-    case 'fechaSalida': { const l = qs('#fechaLlegada'); if (l) vDates(l, el); break; }
     case 'duracion':      vSelect(el, 'la duración'); break;
-    case 'idioma':        vSelect(el, 'el idioma'); break;
     case 'acompanantes':  vAcompanantes(); break;
   }
 }
@@ -798,18 +794,16 @@ function handleSubmit(form) {
     vRequired(qs('#nombre'), 'El nombre'),
     vRequired(qs('#apellidos'), 'Los apellidos'),
     vEmail(qs('#email')),
-    vPhone(qs('#telefono')),
     vRequired(qs('#pais'), 'El país'),
     vRequired(qs('#universidadOrigen'), 'La universidad'),
     vRequired(qs('#facultad'), 'La carrera'),
     vEmailOpt(qs('#emailRRII')),
     vSelect(qs('#universidadDestino'), 'la universidad'),
     vSelect(qs('#cursoAcademico'), 'el curso'),
-    vDates(qs('#fechaLlegada'), qs('#fechaSalida')),
+    vRequired(qs('#fechaLlegada'), 'La fecha de llegada'),
     vSelect(qs('#duracion'), 'la duración'),
     vRadioViaje(),
     vAcompanantes(),
-    vSelect(qs('#idioma'), 'el idioma'),
     vPrivacidad(),
   ];
 
